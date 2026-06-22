@@ -590,6 +590,35 @@
   setupParallax();
 
   /* =========================================
+     Global Background Spotlight
+     ========================================= */
+  function setupBgSpotlight() {
+    var bgVisuals = $('.bg-visuals');
+    var bgGlow = $('#bgGlow');
+    if (!bgVisuals || !bgGlow) return;
+
+    var fadeTimeout = null;
+
+    document.addEventListener('mousemove', function (e) {
+      bgVisuals.style.setProperty('--mouse-x', e.clientX + 'px');
+      bgVisuals.style.setProperty('--mouse-y', e.clientY + 'px');
+
+      bgGlow.classList.add('active');
+
+      clearTimeout(fadeTimeout);
+      fadeTimeout = setTimeout(function () {
+        bgGlow.classList.remove('active');
+      }, 2000);
+    });
+
+    document.addEventListener('mouseleave', function () {
+      bgGlow.classList.remove('active');
+    });
+  }
+
+  setupBgSpotlight();
+
+  /* =========================================
      Keyboard Accessibility
   ========================================= */
   $$('[tabindex], a, button, input, textarea').forEach(function (el) {
