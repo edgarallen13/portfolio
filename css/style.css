@@ -1629,7 +1629,8 @@ h1, h2, h3, h4, h5, h6 {
     top: var(--nav-height);
     left: 0;
     right: 0;
-    bottom: 0;
+    height: calc(100vh - var(--nav-height));
+    height: calc(100dvh - var(--nav-height));
     background: var(--bg-primary);
     flex-direction: column;
     align-items: center;
@@ -1811,4 +1812,47 @@ h1, h2, h3, h4, h5, h6 {
     --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.4);
     --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.5);
   }
+}
+
+/* ---------- Interactive Background Visuals ---------- */
+.bg-visuals {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.bg-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, -1000px) var(--mouse-y, -1000px),
+    rgba(var(--accent-rgb), 0.06) 0%,
+    rgba(var(--accent-rgb), 0.02) 40%,
+    transparent 80%
+  );
+  opacity: 0;
+  transition: opacity 1.5s var(--ease-out-expo);
+  will-change: background;
+}
+
+.bg-glow.active {
+  opacity: 1;
+  transition: opacity 0.3s var(--ease-out-expo);
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--border-light) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
+  background-size: 60px 60px;
+  opacity: 0.06;
+  transition: opacity 0.5s var(--ease-out-expo);
+}
+
+[data-theme="dark"] .bg-grid {
+  opacity: 0.1;
 }
