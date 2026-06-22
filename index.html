@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BaseLogic - Professional App Developer crafting cross-platform mobile and web experiences.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a0a0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='system-ui' font-weight='700' font-size='18' fill='%23fafafa'%3ES%3C/text%3E%3C/svg%3E">
+  <title>BaseLogic | App Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="header" role="banner">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="#" class="nav-logo" aria-label="BaseLogic Home">BaseLogic</a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="hero" aria-label="Introduction">
+      <div class="hero-grid container">
+        <div class="hero-left">
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">BaseLogic</h1>
+          <p class="hero-title">I craft <span class="typewriter" id="typewriter">cross-platform mobile experiences</span></p>
+          <p class="hero-description">App developer with 5+ years of experience building performant, beautiful applications for iOS, Android, and the web.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-right" aria-hidden="true">
+          <div class="hero-visual-wrapper">
+            <div class="hero-glow-ring"></div>
+            <img src="assets/images/hero_showcase.png" alt="BaseLogic App Mockups" class="hero-showcase-img">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span class="scroll-text">Scroll</span>
+        <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="4" x2="8" y2="16"/><polyline points="2,12 8,18 14,12"/></svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm an app developer passionate about building products that make a real difference. With a focus on clean architecture, performance, and pixel-perfect interfaces, I transform complex problems into intuitive digital experiences.</p>
+            <p>Over the past 5 years, I've shipped 12+ apps across iOS, Android, and web platforms — from health &amp; fitness to fintech. I believe great software is built at the intersection of thoughtful design and robust engineering.</p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-number" data-count="12">0</span>
+                <span class="stat-label">Apps Shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="5">0</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="8">0</span>
+                <span class="stat-label">Awards</span>
+              </div>
+            </div>
+            <a href="#" class="btn btn-outline btn-sm" download>Download CV</a>
+          </div>
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-image-wrapper">
+              <img src="assets/images/about_visual.png" alt="BaseLogic Workspace Abstraction" class="about-img">
+              <div class="about-decoration" data-parallax="0.2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title" id="skills-title">Skills &amp; Technologies</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="skills-bento">
+          <!-- Languages Card -->
+          <div class="skills-card bento-card" data-delay="0">
+            <div class="bento-glow"></div>
+            <div class="skills-card-header">
+              <div class="skills-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <h3 class="skills-card-title">Languages</h3>
+            </div>
+            <p class="skills-card-desc">Robust coding in cross-platform and native systems.</p>
+            <ul class="skills-badge-list">
+              <li><span class="badge">TypeScript / JS</span> <span class="badge-percentage">95%</span></li>
+              <li><span class="badge">Dart</span> <span class="badge-percentage">90%</span></li>
+              <li><span class="badge">Swift</span> <span class="badge-percentage">80%</span></li>
+              <li><span class="badge">Kotlin</span> <span class="badge-percentage">75%</span></li>
+              <li><span class="badge">Python</span> <span class="badge-percentage">70%</span></li>
+            </ul>
+          </div>
+          <!-- Frameworks Card -->
+          <div class="skills-card bento-card" data-delay="100">
+            <div class="bento-glow"></div>
+            <div class="skills-card-header">
+              <div class="skills-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+              </div>
+              <h3 class="skills-card-title">Frameworks</h3>
+            </div>
+            <p class="skills-card-desc">Modern cross-platform frameworks and native UI toolkits.</p>
+            <ul class="skills-badge-list">
+              <li><span class="badge">React Native</span> <span class="badge-percentage">95%</span></li>
+              <li><span class="badge">Flutter</span> <span class="badge-percentage">90%</span></li>
+              <li><span class="badge">SwiftUI</span> <span class="badge-percentage">80%</span></li>
+              <li><span class="badge">Node.js / Express</span> <span class="badge-percentage">85%</span></li>
+              <li><span class="badge">Jetpack Compose</span> <span class="badge-percentage">70%</span></li>
+            </ul>
+          </div>
+          <!-- Tools & Platforms Card -->
+          <div class="skills-card bento-card" data-delay="200">
+            <div class="bento-glow"></div>
+            <div class="skills-card-header">
+              <div class="skills-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3 class="skills-card-title">Tools &amp; Platforms</h3>
+            </div>
+            <p class="skills-card-desc">Cloud services, CI/CD pipelines, and prototype handoff.</p>
+            <ul class="skills-badge-list">
+              <li><span class="badge">Git &amp; GitHub</span> <span class="badge-percentage">95%</span></li>
+              <li><span class="badge">Firebase / Supabase</span> <span class="badge-percentage">90%</span></li>
+              <li><span class="badge">AWS Services</span> <span class="badge-percentage">75%</span></li>
+              <li><span class="badge">Figma</span> <span class="badge-percentage">80%</span></li>
+              <li><span class="badge">CI/CD (Fastlane)</span> <span class="badge-percentage">85%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title" id="experience-title">Experience</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item" data-delay="0">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022 - Present</span>
+                <h3 class="timeline-role">Senior App Developer</h3>
+                <span class="timeline-company">TechNova Inc.</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Architected and shipped 3 major apps serving 500K+ combined users</li>
+                <li>Led a team of 5 developers, establishing code review and CI/CD practices</li>
+                <li>Reduced app startup time by 60% through performance optimization</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">CI/CD</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-delay="100">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2020 - 2022</span>
+                <h3 class="timeline-role">Mobile Developer</h3>
+                <span class="timeline-company">AppCraft Studio</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Built cross-platform apps using React Native and Flutter for 8 clients</li>
+                <li>Developed reusable component library adopted by the entire engineering team</li>
+                <li>Achieved 4.8+ star ratings on the App Store and Google Play</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Supabase</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item" data-delay="200">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="timeline-date">2018 - 2020</span>
+                <h3 class="timeline-role">Junior App Developer</h3>
+                <span class="timeline-company">WebStudio Agency</span>
+              </div>
+              <ul class="timeline-details">
+                <li>Developed and maintained 6 mobile apps for small to medium businesses</li>
+                <li>Migrated legacy Objective-C codebase to Swift, improving maintainability</li>
+                <li>Collaborated with design team to implement pixel-perfect UIs</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-tag">Swift</span>
+                <span class="tech-tag">Objective-C</span>
+                <span class="tech-tag">UIKit</span>
+                <span class="tech-tag">Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title" id="projects-title">Featured Projects</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section blog" id="blog" aria-labelledby="blog-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">05</span>
+          <h2 class="section-title" id="blog-title">Latest Articles</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="blog-grid" id="blogGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">06</span>
+          <h2 class="section-title" id="contact-title">Get in Touch</h2>
+          <div class="section-line" aria-hidden="true"></div>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group" hidden aria-hidden="true">
+              <label for="hp-field">Leave empty</label>
+              <input type="text" id="hp-field" name="hp-field" tabindex="-1">
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-status" id="formStatus" role="status"></p>
+          </form>
+          <div class="contact-info">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>baezic1222@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Iloilo, Philippines</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>09694200721</span>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Send email" target="_blank" rel="noopener noreferrer">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 BaseLogic. All rights reserved.</p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18,15 12,9 6,15"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
